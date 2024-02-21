@@ -8,20 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
           gridItem.classList.add("grid-item");
 
           const img = document.createElement("img");
-          img.src = item.image;
-          img.alt = item.alt;
+          img.src = item.ImageUrl;
+          img.alt = item.ID;
           gridItem.appendChild(img);
 
           const heading = document.createElement("h3");
-          heading.textContent = item.heading;
+          heading.textContent = item.Name;
           gridItem.appendChild(heading);
 
           const paragraph = document.createElement("p");
-          paragraph.textContent = item.text;
+          paragraph.textContent = item.ShortDesc;
           gridItem.appendChild(paragraph);
 
           const button = document.createElement("button");
-          button.textContent = item.buttonText;
+          button.textContent = "View";
           gridItem.appendChild(button);
 
           gridContainer.appendChild(gridItem);
